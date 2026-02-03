@@ -28,7 +28,7 @@
                         <td>{{ $sis->jurusan }}</td>
                         <td class="text-center">
                             <a href="" class="btn btn-sm btn-info m-0 me-2" style="box-shadow: none !Important">
-                                <i class="fas fa-edit"></i> Tanggapi
+                                <i class="fas fa-edit"></i> Edit
                             </a>
                             <a href="" class="btn btn-sm btn-danger m-0" style="box-shadow: none !Important"
                                 onclick="return confirm('Yakin data siswa ini akan dihapus?')">
