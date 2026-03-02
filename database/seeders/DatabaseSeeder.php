@@ -20,25 +20,25 @@ class DatabaseSeeder extends Seeder
     {
         $dataUser = [
             [
-                'nama' => 'Slamet Kuatno, S.Pd',
-                'username' => 'slametkuatno',
-                'email' => 'slametkuatno@gmail.com',
+                'nama' => 'Dedeh kustinah, S.Pd',
+                'username' => 'dedehkustinah',
+                'email' => 'deekstna@gmail.com',
                 'jabatan' => 'Waka Sarpras',
                 'password' => bcrypt('admin'),
                 'role' => 'admin'
             ],
             [
-                'nama' => 'Annisa Nur Fitri',
+                'nama' => 'Robby Akbar Maulana',
                 'username' => 'user-12345678',
-                'email' => 'annisaica@gmail.com',
+                'email' => 'accbarrbby@gmail.com',
                 'jabatan' => '',
                 'password' => bcrypt('123456'),
                 'role' => 'siswa'
             ],
             [
-                'nama' => 'Cecep Spidermen',
+                'nama' => 'Resty Trianingsih',
                 'username' => 'user-12345679',
-                'email' => 'spidermen@gmail.com',
+                'email' => 'rstytria@gmail.com',
                 'jabatan' => '',
                 'password' => bcrypt('123456'),
                 'role' => 'siswa'
@@ -103,20 +103,34 @@ class DatabaseSeeder extends Seeder
                 'kategori_id' => 1,
                 'judul' => 'Lampu Mati',
                 'isi' => 'Mohon di cek, lampu di ruang kelas 12 RPL mati',
-                'status' => 'diproses',
+                'status' => 'menunggu',
             ],
             [
                 'siswa_id' => 1,
                 'kategori_id' => 1,
                 'judul' => 'Bangku Kurang',
                 'isi' => 'Mohon di cek, jumlah bangku tidak sesuai dengan jumlah total siswa di ruang kelas 12 RPL',
-                'status' => 'diproses',
+                'status' => 'menunggu',
             ],
             [
                 'siswa_id' => 2,
                 'kategori_id' => 2,
                 'judul' => 'Toilet Mampet',
                 'isi' => 'Mohon di cek, toilet perempuan di kamar 2, saluran pembuangannya mampet',
+                'status' => 'menunggu',
+            ],
+            [
+                'siswa_id' => 2,
+                'kategori_id' => 1,
+                'judul' => 'Lampu Mati',
+                'isi' => 'Mohon di cek, lampu mati dongs',
+                'status' => 'menunggu',
+            ],
+            [
+                'siswa_id' => 2,
+                'kategori_id' => 1,
+                'judul' => 'Papan Tulis Rusak',
+                'isi' => 'Mohon di cek, papan tulis sudah pada bolong',
                 'status' => 'menunggu',
             ],
         ];

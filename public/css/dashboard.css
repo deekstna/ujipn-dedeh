@@ -225,6 +225,9 @@ th {
 .selesai {
     background: #14b8a6;
 }
+.ditolak {
+    background: #d00303;
+}
 
 /* BUTTON */
 .btn {

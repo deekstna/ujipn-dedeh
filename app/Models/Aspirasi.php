@@ -8,8 +8,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Aspirasi extends Model
 {
-    protected $table = 'aspirasi';
+    protected $table = 'Aspirasi';
     protected $guarded = ['id'];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function siswa(): BelongsTo
     {

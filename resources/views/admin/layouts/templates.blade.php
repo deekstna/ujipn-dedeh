@@ -24,7 +24,7 @@
                 <div class="user-menu">
                     <div class="user-trigger" onclick="toggleDropdown()">
                         <i class="fa-solid fa-user-circle"></i>
-                        <span>Admin</span>
+                        <span>{{ auth()->user()->username }}</span>
                         <i class="fa-solid fa-caret-down"></i>
                     </div>
 
@@ -69,6 +69,10 @@
     </script>
 
     <script src="/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/js/jquery-4.0.0.min.js
+    "></script>
+
+    @yield('script')
 </body>
 
 </html>

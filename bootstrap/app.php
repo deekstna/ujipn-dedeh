@@ -15,6 +15,9 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'role' => RoleMiddleware::class, // registrasi rolemiddleware di global
         ]);
+        $middleware->validateCsrfTokens(except: [
+            '/admin/get-aspirasi',
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
